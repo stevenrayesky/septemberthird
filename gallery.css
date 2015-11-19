@@ -1,0 +1,60 @@
+#container {
+	margin: 0 auto;
+	width: 1150px;
+}
+
+#content {
+	margin: 25px 0;
+	width: 1150px;
+}
+
+#header {
+	background: none;
+	text-align: center;
+	width: 100%;
+}
+
+#header img {
+	height: auto;
+	width: 350px;
+}
+
+.nav {
+	list-style: none;
+	margin: 0 auto;
+	padding: 10px 0px;
+	width: 450px;
+}
+
+.nav li {
+	display: inline;
+	margin: 10px 0px;
+	padding: 0px 40px;
+}
+
+.nav li a {
+	font: 25px Georgia, Cambria,Times New Roman,Times,serif;
+	text-decoration: none;
+}
+
+.nav li a:visited {
+	color: grey;
+}
+
+#photo_container {
+	text-align: center;
+}
+#social_footer {
+	margin: 30px auto;
+	text-align: center;
+}
+
+#social_footer a img {
+	height: 30px;
+	width: 30px;
+}
+
+#social_footer p {
+	font: 30px;
+	color: grey;
+}

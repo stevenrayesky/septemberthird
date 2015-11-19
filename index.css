@@ -1,136 +1,68 @@
 #container {
 	margin: 0 auto;
-	width: 1020px;
+	width: 1150px;
+}
+
+#content {
+	margin: 25px 0;
+	width: 1150px;
+}
+
+#content img {
+	height: 350px;
+	width: 350px;
 }
 
 #header {
-	background: grey;
+	background: none;
+	text-align: center;
 	width: 100%;
 }
 
 #header img {
-	display: block;
+	height: auto;
+	width: 350px;
+}
+
+#photo_container {
 	margin: 0 auto;
+	text-align: center;
 }
 
 .nav {
 	list-style: none;
 	margin: 0 auto;
-	padding: 0;
-	text-align: center;
-	width: 350px;
+	padding: 10px 0px;
+	width: 450px;
 }
 
 .nav li {
 	display: inline;
-	padding: 0 25px;
+	margin: 10px 0px;
+	padding: 0px 40px;
 }
 
 .nav li a {
-	font-size: 25;
+	font: 25px Georgia, Cambria,Times New Roman,Times,serif;
 	text-decoration: none;
 }
 
-#slider {
-	background: #000;
-	border: 5px solid #eaeaea;
-	box-shadow: 1px 1px 5px;
-	height: 640px;
-	width: 640px;
-	margin: 10px auto;
-	overflow: visible;
-	position: relative;
+.nav li a:visited {
+	color: grey;
 }
 
-#slider ul {
-	margin: 0;
-	padding: 0;
-	position: relative;
+#social_footer {
+	margin: 30px auto;
+	text-align: center;
 }
 
-#slider li {
-	height: auto;
-	width: auto;
-	position: absolute;
-	left: -645px;
-	list-style: none;
+#social_footer a img {
+	height: 30px;
+	width: 30px;
 }
 
-#slider li.firstanimation {
-	animation: cycle 50s linear infinite;
+#social_footer p {
+	font: 30px;
+	color: grey;
 }
 
-#slider li.secondanimation {
-	animation: cycletwo 50s linear infinite;
-}
-
-#slider li.thirdanimation {
-	animation: cyclethree 50s linear infinite;
-}
-
-#slider li.fourthanimation {
-	animation: cyclefour 50s linear infinite;
-}
-
-#slider li.fifthanimation {
-	animation: cyclefive 50s linear infinite;
-}
-#mask {
-	overflow: hidden;
-	height: 640px;
-}
-
-/* ANIMATION */
-
-@keyframes cycle {
-	0% { left: 0px;}
-	4% { left: 0px;}
-	16% { left: 0px; opacity: 1; z-index: 0;}
-	20% { left: 645px; opacity: 0; z-index: 0;}
-	21% { left: -645px; opacity: 0; z-index: -1;}
-	92% { left: -645px; opacity: 0; z-index: 0;}
-	96% { left: -645px; opacity: 0;}
-	100% { left: 0px; opacity: 1;}
-}
-
-@keyframes cycletwo {
-	0% { left: -645px; opacity: 0;} 
-	16% { left: -645px; opacity: 0; z-index: 0;}
-	20% { left: 0px; opacity: 1; }
-	24% { left: 0px; opacity: 1; }
-	36% { left: 0px; opacity: 1; z-index: 0;}
-	40% { left: 645px; opacity: 0; z-index: 0;}
-	41% { left: -645px; opacity: 0; z-index: -1;}
-	100% { left: -645px; opacity: 0; z-index: -1;}
-}
-
-@keyframes cyclethree {
-	0% { left: -645px; opacity: 0;}
-	36% { left: -645px; opacity: 0;}
-	40% { left: 0px; opacity: 1; z-index: 1;}
-	44% { left: 0px; opacity: 1; z-index: 1;}
-	56% { left: 0px; opacity: 1; z-index: 1;}
-	60% { left: 645px; opacity: 0; z-index: 0;}
-	61% { left: -645px; opacity: 0; z-index: -1;}
-	100% { left: -645px; opacity: 0; z-index: -1;}
-}
-
-@keyframes cyclefour {
-	0% { left: -645px; opacity: 0;}
-	56% { left: -645; opacity: 0;}
-	60% { left: 0px; opacity: 1; z-index: 1;}
-	64% { left: 0px; opacity: 1; z-index: 1;}
-	76% { left: 0px; opacity: 1; z-index: 0;}
-	80% { left: 645px; opacity: 0; z-index: 0;}
-	81% { left: -645px; opacity: 0; z-index: -1;}
-	100% { left: -645px; opacity: 0; z-index: -1;}
-}
-
-@keyframes cyclefive {
-	0% { left: -645px; opacity: 0;}
-	76% { left: -645px; opacity: 0;}
-	80% { left: 0px; opacity: 1; z-index: 1;}
-	84% { left: 0px; opacity: 1; z-index: 1;}
-	96% { left: 0px; opacity: 1; z-index: 0;}
-	100% { left: 645px; opacity: 0; z-index: 0;}
-}
